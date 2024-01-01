@@ -52,7 +52,10 @@ function saveCurrentFrame(video: HTMLVideoElement) {
     const currentTime = formatTime(video.currentTime)
     a.download = `${title} ${currentTime}.png`; // 下载的文件名
     a.click();
+
+    document.removeChild(a);
   }, "image/png")
+  document.removeChild(canvas)
 }
 
 
