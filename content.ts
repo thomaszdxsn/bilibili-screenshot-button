@@ -59,7 +59,6 @@ function saveCurrentFrame(video: HTMLVideoElement) {
 async function main() {
   const video = await waitForElm(".bpx-player-video-wrap video")
   const siblingButton = await waitForElm('.bpx-player-ctrl-btn[aria-label="清晰度"]')
-  console.log({ video, siblingButton })
   if (!siblingButton || !video) {
     return
   }
