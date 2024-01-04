@@ -64,12 +64,12 @@ async function main() {
   }
 
   const button = document.createElement("div")
+  button.className = "bpx-player-ctrl-btn bpx-player-ctrl-quality-result"
   button.role = "button"
-  button.style.color = "hsla(0,0%,100%,.8)"
   button.style.cursor = "pointer"
-  button.style.fontSize = "14px"
   button.style.fontWeight = "600"
   button.style.marginRight = "22px"
+  button.style.whiteSpace = "nowrap"
   button.setAttribute("aria-label", "下载当前视频帧")
   button.innerText = "截屏"
 
