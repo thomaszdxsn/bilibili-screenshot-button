@@ -28,8 +28,6 @@
     "typescript": "5.2.2"
   },
   "manifest": {
-    "host_permissions": [
-      "https://*/*"
-    ]
+    "permissions": ["https://*.bilibili.com/*"]
   }
 }
