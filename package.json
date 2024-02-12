@@ -4,13 +4,17 @@
   "version": "0.0.1",
   "description": "A button can download bilibili video screenshot",
   "author": "thomaszdxsn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomaszdxsn/bilibili-screenshot-button"
+  },
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
     "test": "plasmo test"
   },
   "dependencies": {
-    "plasmo": "0.84.0",
+    "plasmo": "0.84.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -24,8 +28,6 @@
     "typescript": "5.2.2"
   },
   "manifest": {
-    "host_permissions": [
-      "https://*/*"
-    ]
+    "permissions": ["https://*.bilibili.com/*"]
   }
 }
